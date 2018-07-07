@@ -35,9 +35,6 @@ header('X-UA-Compatible: IE=edge,chrome=1');
                     $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
                     tpl_link(wl(), '<img src="'.$logo.'" '.$logoSize[3].' alt="" />', 'class="site-logo" accesskey="h" title="[H]"');
                 ?>
-                <h1 class="site-title">
-                    <a href="<?php echo wl(); ?>" rel="home" accesskey="h" title="[H]"><?php echo $conf['title']; ?></a>
-                </h1>
                 <?php if ($conf['tagline']): ?><p class="site-description"><?php echo $conf['tagline'] ?></p><?php endif ?>
                 <button class="secondary-toggle">Menu</button>
             </div>
